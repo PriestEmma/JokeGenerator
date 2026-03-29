@@ -1,7 +1,7 @@
 const nav = document.querySelector('.nav');
 
 function toggleTransparency() {
-  if (window.scrollY > 575) {
+  if (window.scrollY > 444) {
     nav.classList.add('sticky');
   } else if (window.scrollY > 770) {
     nav.classList.add('sticky');

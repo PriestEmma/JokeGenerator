@@ -8,35 +8,38 @@
 
 /* Custom Properties */
 :root {
-  --primary-color: #152c7a;
-  --secondary-color: #152c7a;
   --tertiary-color: #7f9ffa;
   --dark-color: #152c7a;
-  --background-color: #dce3f9;
+  --background-color: #000;
   --date-color: #4169e1;
   --h1-color: #00008b;
   --name-color: #89a7ff;
-  --background-grid: #7f9ffa;
-  --card-bg: #bac6f3;
+  --background-grid: #add8e6;
+  --grid: #c5f1ff;
+  --dark-blue: #00008b;
+  --middle-rect: #add8e6;
   --card-shadow: #091234;
+  --white: #fff;
 }
 
 body,
 html {
-  font-family: 'montserrat', sans-serif;
+  font-family: 'Fira Sans', sans-serif;
   scroll-behavior: smooth;
   position: relative;
-  background-color: var(--background-color);
+  /* background-color: var(--dark-blue);
+  background-image:
+    linear-gradient(rgba(197, 241, 255, 0.3) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(197, 241, 255, 0.3) 1px, transparent 1px);
+  background-size: 20px 20px; */
+  background-color: white;
+  color: black;
 }
 
 /* Utility Classes */
 
 .flex-card {
-  display: grid;
   max-width: 1152px;
-  margin: 0px 55.5px;
-  gap: 27px;
-  grid-template-columns: repeat(4, 1fr);
 }
 
 .div {
@@ -63,6 +66,11 @@ li {
   cursor: pointer;
 }
 
+img {
+  width: 100%;
+  height: auto;
+}
+
 img.img {
   width: 100%;
   height: auto;
@@ -83,26 +91,23 @@ video {
 /* Main */
 
 main.main-container {
-  padding: 8rem 2rem 18rem;
+  padding: 0rem 2rem 0rem;
   color: #fff;
-  overflow-x: hidden;
-  position: relative;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
+  overflow-x: hidden;
 
   /* Background Grid */
   background-color: var(--background-grid);
-
   background-image:
-    linear-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
-
+    linear-gradient(rgba(0, 67, 255, 0.3) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 67, 255, 0.3) 1px, transparent 1px);
   background-size: 20px 20px;
 
   .date {
-    font-family: 'mulish', sans-serif;
+    font-family: 'Fira Sans', sans-serif;
     color: var(--date-color);
     font-size: 21px;
     padding: 35px;
@@ -110,31 +115,31 @@ main.main-container {
   }
 
   .main-text {
-    font-family: 'Great Vibes', sans-serif;
+    font-family: 'Mrs Saint Delafield', sans-serif;
     letter-spacing: 5px;
     font-weight: 200;
-    font-size: 180px;
+    text-align: center;
+    font-size: 11.5rem;
     color: var(--h1-color);
   }
 
   .name {
-    width: 150px;
-    height: 60px;
+    padding: 0.5rem;
     background-color: var(--date-color);
-    font-family: 'mulish', sans-serif;
-    font-size: 26px;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 1.1rem;
+    text-align: center;
     color: var(--h1-color);
     display: flex;
-    text-align: center;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    right: 272px;
-    top: 390px;
+    align-self: flex-end;
+    margin: -1rem;
+    width: 200px;
   }
 
   .compliment {
-    font-family: 'mulish', sans-serif;
+    font-family: 'Fira Sans', sans-serif;
     color: var(--date-color);
     font-size: 21px;
     text-align: center;
@@ -142,11 +147,19 @@ main.main-container {
   }
 }
 
-.moving-image {
+.main-flex {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.flex-below {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 1.4rem;
 }
 
 /* Navbar */
@@ -174,11 +187,7 @@ main.main-container {
 /* Section */
 .about {
   margin-top: 2rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  scroll-margin-top: 50px;
+  scroll-margin-top: 5rem;
 }
 
 section h2 {
@@ -190,20 +199,10 @@ section h2 {
 /* Section about-him */
 .card {
   border: 0.3px solid var(--primary-color);
-  width: 100%;
-  height: 100%;
-  padding: 2px;
-  margin-bottom: 20px;
   border-radius: 12px;
   transition:
     transform 0.3s ease,
     box-shadow 0.3s ease;
-
-  h3 {
-    padding: 25px 0px 5px 2px;
-    margin-left: 25px;
-    text-align: left;
-  }
 
   p {
     padding: 12px 14px 20px 14px;
@@ -215,9 +214,90 @@ section h2 {
   box-shadow: 0px 0px 13px var(--dark-color);
 }
 
+.card.content {
+  width: 100%;
+  display: flex;
+  margin-top: 2rem;
+  border-radius: 0;
+}
+
+.special-card {
+  width: 100%;
+}
+
+.about-pic {
+  background: var(--dark-color);
+  padding: 1.3rem;
+}
+
+.about-pic img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background-grid);
+  background-image:
+    linear-gradient(rgba(0, 67, 255, 0.3) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 67, 255, 0.3) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+p.about-text {
+  text-align: center;
+  color: var(--dark-color);
+}
+
 /* Photo Gallery */
+.image {
+  display: flex;
+
+  margin-top: 2rem;
+}
+
+.image-card {
+  height: 100%;
+  flex: 1;
+}
+
+.image-card img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.image-txt {
+  background-color: var(--background-grid);
+  background-image:
+    linear-gradient(rgba(0, 67, 255, 0.3) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 67, 255, 0.3) 1px, transparent 1px);
+  background-size: 20px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+
+  h2 {
+    width: 170px;
+    color: black;
+    margin: 1rem;
+    text-align: left;
+    font-size: 0.9rem;
+  }
+}
+
+ul.ul-list li {
+  color: black;
+  font-size: 0.6rem;
+  padding-bottom: 0.3rem;
+}
+
 .special {
-  margin: 45px 15px 45px 15px;
+  margin: 45px 0px 45px 0px;
   display: flex;
   flex-direction: column;
 }
@@ -228,6 +308,7 @@ section h2 {
 
 .gallery-container {
   margin-top: 55px;
+  padding: 0rem 1rem 0rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 40px;
@@ -293,12 +374,14 @@ section h2 {
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
   margin-top: 30px;
+  padding: 1rem;
   cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
 }
 
 h2.grid-head {
   font-size: 3rem;
-  color: var(--dark-color);
+  color: black;
 }
 
 .family-name {
@@ -309,7 +392,7 @@ h2.grid-head {
 
 .card {
   border: none;
-  background: var(--card-bg);
+  background: var(--background-grid);
   box-shadow: 0px 1px 5px var(--card-shadow);
 }
 
@@ -327,7 +410,7 @@ h2.grid-head {
 /* Footer */
 .footer {
   height: 200px;
-  background: var(--primary-color);
+  background: var(--dark-color);
   color: white;
   display: flex;
   justify-content: center;
@@ -343,35 +426,35 @@ h2.grid-head {
   }
 }
 
-@media (max-width: 1120px) {
-  .flex-card {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 35px;
-  }
-}
-
-@media (max-width: 992px) {
-  .flex-card {
-    grid-template-columns: repeat(2, 1fr);
+@media (max-width: 570px) {
+  /* Main */
+  .flex-below h1.main-text {
+    letter-spacing: 0px;
+    font-size: 2.3rem;
   }
 
-  .gallery-container {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 768px) {
-  .flex-card {
-    grid-template-columns: repeat(1, 1fr);
+  .flex-below {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
-  .gallery-container {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 35px;
+  .flex-below p.name {
+    margin-top: -0.9rem;
+    transform: translateX(2rem);
+    width: 60px;
+    font-size: 0.5rem;
   }
-}
 
-@media (max-width: 576px) {
+  .main-container p.date {
+    font-size: 1rem;
+  }
+
+  .main-container p.compliment {
+    font-size: 0.9rem;
+    padding-top: 3rem;
+  }
+
   .flex-card {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -386,32 +469,13 @@ h2.grid-head {
     padding-bottom: 15px;
   }
 
-  /* Main */
-  main.main-container {
-    padding-bottom: 9rem;
-  }
-
-  main.main-container h1.main-text {
-    font-size: 60px;
-    text-align: center;
-    margin-top: 20px;
-  }
-
-  main.main-container p.name {
-    right: 98px;
-    top: 300px;
-    font-size: 18px;
-    height: 38px;
-    width: 120px;
-  }
-
   /* Navbar */
   .navbar-items a.act {
     color: var(--tertiary-color);
   }
 
   .navbar-items a {
-    font-size: 17px;
+    font-size: 0.77rem;
   }
 
   .navbar-items a:hover {
