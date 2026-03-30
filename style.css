@@ -282,7 +282,7 @@ ul.ul-list li {
   color: var(--h1-color);
   font-size: 0.7rem;
   padding-bottom: 0.7rem;
-  text-align: start;
+  text-align: center;
 }
 
 .special {
@@ -613,9 +613,5 @@ ul.ul-list li {
   img {
     object-fit: cover;
     height: 100%;
-  }
-
-  ul.ul-list li {
-    color: var(--h1-color);
   }
 }
