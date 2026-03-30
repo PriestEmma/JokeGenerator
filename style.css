@@ -272,7 +272,7 @@ p.about-text {
     width: 170px;
     color: var(--dark-blue);
     margin: 1rem;
-    text-align: left;
+    text-align: center;
     font-size: 1.2rem;
     text-decoration: underline;
   }
