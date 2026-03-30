@@ -33,7 +33,7 @@ html {
     linear-gradient(rgba(127, 159, 250, 0.3) 1px, transparent 1px),
     linear-gradient(90deg, rgba(127, 159, 250, 0.3) 1px, transparent 1px);
   background-size: 20px 20px;
-  color: black;
+  color: var(--h1-color);
   font-weight: 500;
 }
 
@@ -279,7 +279,7 @@ p.about-text {
 }
 
 ul.ul-list li {
-  color: black;
+  color: var(--h1-color);
   font-size: 0.7rem;
   padding-bottom: 0.7rem;
   text-align: start;
@@ -571,6 +571,7 @@ h2.grid-head {
 h2.bye-text {
   text-decoration: underline;
   color: var(--dark-blue);
+  margin-bottom: 0.8rem;
 }
 
 div.good-p p {
@@ -612,5 +613,9 @@ ul.ul-list li {
   img {
     object-fit: cover;
     height: 100%;
+  }
+
+  ul.ul-list li {
+    color: var(--h1-color);
   }
 }
