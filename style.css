@@ -108,11 +108,11 @@ main.main-container {
     color: var(--date-color);
     font-size: 21px;
     text-align: center;
+    padding-bottom: 1.2rem;
   }
 
   .main-text {
     font-family: 'Mrs Saint Delafield', sans-serif;
-    letter-spacing: 5px;
     font-weight: 200;
     text-align: center;
     font-size: 11.5rem;
@@ -145,15 +145,17 @@ main.main-container {
 .main-flex {
   display: flex;
   flex-direction: column;
-  margin: 0 0rem 0rem 0rem;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
 }
 
 .flex-below {
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding: 0.5rem 0.5rem 0.7rem 0.5rem;
-  margin-top: 2rem;
+  padding: 0.2rem 0.5rem 0rem 0.5rem;
+  margin: 0;
 }
 
 /* Navbar */
@@ -424,7 +426,7 @@ h2.grid-head {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 8rem 0 3rem 0;
+    margin: 3rem 0 3rem 0;
   }
 
   .flex-below p.name {
@@ -442,8 +444,7 @@ h2.grid-head {
 
   .main-container p.date {
     font-size: 1rem;
-    padding-top: 1rem;
-    margin-top: 0;
+    margin-bottom: 1.5rem;
   }
 
   .main-container p.compliment {
