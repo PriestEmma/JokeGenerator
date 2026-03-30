@@ -213,7 +213,7 @@ main.main-container {
 .about-pic {
   background: var(--dark-color);
   padding: 1.3rem;
-  flex: 0.83;
+  flex: 1.1;
 }
 
 .about-pic img {
@@ -230,7 +230,7 @@ main.main-container {
     linear-gradient(rgba(0, 67, 255, 0.3) 1px, transparent 1px),
     linear-gradient(90deg, rgba(0, 67, 255, 0.3) 1px, transparent 1px);
   background-size: 20px 20px;
-  flex: 1;
+  flex: 1.1;
 }
 
 p.about-text {
@@ -265,7 +265,8 @@ p.about-text {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex: 1;
+  flex: 1.2;
+  height: 300px;
 
   h2 {
     width: 170px;
@@ -566,4 +567,20 @@ h2.bye-text {
 div.good-p p {
   color: var(--dark-blue);
   font-weight: bold;
+}
+
+p.about-text {
+  font-size: 0.75rem;
+}
+
+h2.txt {
+  margin: 0.5rem 0.5rem 0.5rem;
+}
+
+.image-txt {
+  max-width: 350px;
+}
+
+ul.ul-list li {
+  max-width: 150px;
 }
