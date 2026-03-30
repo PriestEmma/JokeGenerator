@@ -15,7 +15,7 @@
   --h1-color: #00008b;
   --name-color: #89a7ff;
   --background-grid: #add8e6;
-  --grid: #c5f1ff;
+  --grid: #aee6ffff;
   --dark-blue: #00008b;
   --middle-rect: #add8e6;
   --card-shadow: #091234;
@@ -27,13 +27,14 @@ html {
   font-family: 'Fira Sans', sans-serif;
   scroll-behavior: smooth;
   position: relative;
-  /* background-color: var(--dark-blue);
+  -webkit-tap-highlight-color: transparent;
+  background-color: #eaf2ff;
   background-image:
-    linear-gradient(rgba(197, 241, 255, 0.3) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(197, 241, 255, 0.3) 1px, transparent 1px);
-  background-size: 20px 20px; */
-  background-color: white;
+    linear-gradient(rgba(65, 105, 225, 0.15) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(65, 105, 225, 0.15) 1px, transparent 1px);
+  background-size: 25px 25px;
   color: black;
+  font-weight: 500;
 }
 
 /* Utility Classes */
@@ -61,7 +62,7 @@ a {
 }
 
 li {
-  padding: 8px;
+  padding: 5px;
   text-align: center;
   cursor: pointer;
 }
@@ -91,26 +92,21 @@ video {
 /* Main */
 
 main.main-container {
-  padding: 0rem 2rem 0rem;
   color: #fff;
   height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   overflow-x: hidden;
 
   /* Background Grid */
   background-color: var(--background-grid);
   background-image:
-    linear-gradient(rgba(0, 67, 255, 0.3) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(0, 67, 255, 0.3) 1px, transparent 1px);
+    linear-gradient(rgba(127, 159, 250, 0.3) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(127, 159, 250, 0.3) 1px, transparent 1px);
   background-size: 20px 20px;
 
   .date {
     font-family: 'Fira Sans', sans-serif;
     color: var(--date-color);
     font-size: 21px;
-    padding: 35px;
     text-align: center;
   }
 
@@ -143,39 +139,34 @@ main.main-container {
     color: var(--date-color);
     font-size: 21px;
     text-align: center;
-    padding-top: 82px;
   }
 }
 
 .main-flex {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
+  margin: 0 0rem 0rem 0rem;
 }
 
 .flex-below {
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding: 1.4rem;
+  padding: 0.5rem 0.5rem 0.7rem 0.5rem;
+  margin-top: 2rem;
 }
 
 /* Navbar */
 .navbar-container {
   background-color: var(--dark-color);
   box-shadow: 0px 2px 6px black;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-  padding: 10px;
 }
 
 .navbar-list {
   display: flex;
   justify-content: center;
   height: 50px;
-  gap: 15px;
+  gap: 17px;
 }
 
 .navbar.sticky {
@@ -186,14 +177,7 @@ main.main-container {
 
 /* Section */
 .about {
-  margin-top: 2rem;
-  scroll-margin-top: 5rem;
-}
-
-section h2 {
-  padding: 10px;
-  font-size: 2rem;
-  text-align: center;
+  scroll-margin-top: 3rem;
 }
 
 /* Section about-him */
@@ -217,7 +201,6 @@ section h2 {
 .card.content {
   width: 100%;
   display: flex;
-  margin-top: 2rem;
   border-radius: 0;
 }
 
@@ -228,6 +211,7 @@ section h2 {
 .about-pic {
   background: var(--dark-color);
   padding: 1.3rem;
+  flex: 0.83;
 }
 
 .about-pic img {
@@ -244,6 +228,7 @@ section h2 {
     linear-gradient(rgba(0, 67, 255, 0.3) 1px, transparent 1px),
     linear-gradient(90deg, rgba(0, 67, 255, 0.3) 1px, transparent 1px);
   background-size: 20px 20px;
+  flex: 1;
 }
 
 p.about-text {
@@ -254,8 +239,7 @@ p.about-text {
 /* Photo Gallery */
 .image {
   display: flex;
-
-  margin-top: 2rem;
+  flex-direction: row-reverse;
 }
 
 .image-card {
@@ -283,31 +267,32 @@ p.about-text {
 
   h2 {
     width: 170px;
-    color: black;
+    color: var(--dark-blue);
     margin: 1rem;
     text-align: left;
-    font-size: 0.9rem;
+    font-size: 1.2rem;
+    text-decoration: underline;
   }
 }
 
 ul.ul-list li {
   color: black;
-  font-size: 0.6rem;
-  padding-bottom: 0.3rem;
+  font-size: 0.7rem;
+  padding-bottom: 0.7rem;
+  text-align: start;
 }
 
 .special {
-  margin: 45px 0px 45px 0px;
   display: flex;
   flex-direction: column;
 }
 
 .gallery {
-  scroll-margin-top: 100px;
+  scroll-margin-top: 2rem;
 }
 
 .gallery-container {
-  margin-top: 55px;
+  margin-top: 1.8rem;
   padding: 0rem 1rem 0rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -342,6 +327,7 @@ ul.ul-list li {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 2.5rem;
 }
 
 .lightbox {
@@ -366,7 +352,7 @@ ul.ul-list li {
 
 /* Amazing */
 .amazing {
-  scroll-margin-top: 100px;
+  scroll-margin-top: 2rem;
 }
 
 .grid {
@@ -374,9 +360,8 @@ ul.ul-list li {
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
   margin-top: 30px;
-  padding: 1rem;
+  padding: 1.2rem;
   cursor: pointer;
-  -webkit-tap-highlight-color: transparent;
 }
 
 h2.grid-head {
@@ -392,14 +377,14 @@ h2.grid-head {
 
 .card {
   border: none;
-  background: var(--background-grid);
+  background: var(--grid);
   box-shadow: 0px 1px 5px var(--card-shadow);
 }
 
 .cards.active {
-  background: var(--dark-color);
+  background: var(--dark-blue);
   color: white;
-  transform: rotate(3deg) scale(1.03);
+  transform: rotate(2deg) scale(1.03);
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
 
   h2 {
@@ -430,29 +415,40 @@ h2.grid-head {
   /* Main */
   .flex-below h1.main-text {
     letter-spacing: 0px;
-    font-size: 2.3rem;
+    font-size: 6rem;
+    line-height: 1.1;
+    font-weight: 600;
   }
 
   .flex-below {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 8rem 0 3rem 0;
   }
 
   .flex-below p.name {
-    margin-top: -0.9rem;
-    transform: translateX(2rem);
+    margin-top: -1.8rem;
+    transform: translateX(2.7rem);
     width: 60px;
     font-size: 0.5rem;
   }
 
+  .main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   .main-container p.date {
     font-size: 1rem;
+    padding-top: 1rem;
+    margin-top: 0;
   }
 
   .main-container p.compliment {
     font-size: 0.9rem;
-    padding-top: 3rem;
+    padding-top: 1.9rem;
   }
 
   .flex-card {
@@ -509,14 +505,6 @@ h2.grid-head {
     padding: 12px;
   }
 
-  .cards.active {
-    background: var(--dark-color);
-    color: white;
-
-    transform: rotate(3deg) scale(1.03);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
-  }
-
   .family-name {
     display: block;
     padding: 8px;
@@ -527,6 +515,10 @@ h2.grid-head {
     transition:
       transform 0.3s ease,
       box-shadow 0.3s ease;
+
+    h3 {
+      margin: 0;
+    }
   }
 
   .gallery-container {
@@ -534,7 +526,6 @@ h2.grid-head {
     grid-template-columns: repeat(1, 1fr);
     grid-auto-rows: 330px;
     width: 100%;
-
     transition: 0.3s;
 
     img {
@@ -550,4 +541,26 @@ h2.grid-head {
   .special {
     display: grid;
   }
+}
+
+/* Goodbye */
+.goodbye {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: var(--grid);
+  height: 300px;
+  margin-top: 1.5rem;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+}
+
+h2.bye-text {
+  text-decoration: underline;
+  color: var(--dark-blue);
+}
+
+div.good-p p {
+  color: var(--dark-blue);
+  font-weight: bold;
 }
