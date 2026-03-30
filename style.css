@@ -450,6 +450,10 @@ h2.grid-head {
     padding-top: 1rem;
   }
 
+  .main-flex {
+    gap: 80px;
+  }
+
   .flex-card {
     grid-template-columns: repeat(1, 1fr);
   }
