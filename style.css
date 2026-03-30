@@ -28,11 +28,11 @@ html {
   scroll-behavior: smooth;
   position: relative;
   -webkit-tap-highlight-color: transparent;
-  background-color: #eaf2ff;
+  background-color: var(--background-grid);
   background-image:
-    linear-gradient(rgba(65, 105, 225, 0.15) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(65, 105, 225, 0.15) 1px, transparent 1px);
-  background-size: 25px 25px;
+    linear-gradient(rgba(127, 159, 250, 0.3) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(127, 159, 250, 0.3) 1px, transparent 1px);
+  background-size: 20px 20px;
   color: black;
   font-weight: 500;
 }
