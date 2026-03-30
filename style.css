@@ -121,9 +121,9 @@ main.main-container {
 
   .name {
     padding: 0.5rem;
-    background-color: var(--date-color);
+    background-color: var(--name-color);
     font-family: 'Fira Sans', sans-serif;
-    font-size: 1.1rem;
+    font-size: 26px;
     text-align: center;
     color: var(--h1-color);
     display: flex;
@@ -406,11 +406,13 @@ h2.grid-head {
 
   p {
     padding: 10px;
+    font-size: 0.9rem;
   }
 
   h4 {
     padding: 10px;
     text-align: center;
+    font-size: 0.8rem;
   }
 }
 
@@ -429,11 +431,18 @@ h2.grid-head {
     align-items: center;
   }
 
-  .flex-below p.name {
+  .flex-below .name-box {
+    display: flex;
+    justify-content: end;
+    width: 130px;
+    padding: 20px;
     margin-top: -1.8rem;
-    transform: translateX(2.7rem);
-    width: 60px;
-    font-size: 0.5rem;
+    transform: translateX(0.7rem);
+  }
+
+  .flex-below p.name {
+    width: 100%;
+    font-size: 0.7rem;
   }
 
   .main-container {
