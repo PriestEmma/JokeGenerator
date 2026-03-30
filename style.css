@@ -30,8 +30,8 @@ html {
   -webkit-tap-highlight-color: transparent;
   background-color: var(--background-grid);
   background-image:
-    linear-gradient(rgba(0, 67, 255, 0.3) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(0, 67, 255, 0.3) 1px, transparent 1px);
+    linear-gradient(rgba(127, 159, 250, 0.3) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(127, 159, 250, 0.3) 1px, transparent 1px);
   background-size: 20px 20px;
   color: black;
   font-weight: 500;
@@ -99,8 +99,8 @@ main.main-container {
   /* Background Grid */
   background-color: var(--background-grid);
   background-image:
-    linear-gradient(rgba(0, 67, 255, 0.3) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(0, 67, 255, 0.3) 1px, transparent 1px);
+    linear-gradient(rgba(127, 159, 250, 0.3) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(127, 159, 250, 0.3) 1px, transparent 1px);
   background-size: 20px 20px;
 
   .date {
@@ -227,8 +227,8 @@ main.main-container {
   align-items: center;
   background-color: var(--background-grid);
   background-image:
-    linear-gradient(rgba(0, 67, 255, 0.3) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(0, 67, 255, 0.3) 1px, transparent 1px);
+    linear-gradient(rgba(127, 159, 250, 0.3) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(127, 159, 250, 0.3) 1px, transparent 1px);
   background-size: 20px 20px;
   flex: 1.1;
 }
@@ -258,8 +258,8 @@ p.about-text {
 .image-txt {
   background-color: var(--background-grid);
   background-image:
-    linear-gradient(rgba(0, 67, 255, 0.3) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(0, 67, 255, 0.3) 1px, transparent 1px);
+    linear-gradient(rgba(127, 159, 250, 0.3) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(127, 159, 250, 0.3) 1px, transparent 1px);
   background-size: 20px 20px;
   display: flex;
   flex-direction: column;
@@ -592,7 +592,6 @@ h2.txt {
 
 ul.ul-list li {
   max-width: 150px;
-  color: var(--dark-blue);
 }
 
 /* Amazing container */
