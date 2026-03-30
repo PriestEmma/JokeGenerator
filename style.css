@@ -395,6 +395,10 @@ h2.grid-head {
   }
 }
 
+.grid p {
+  font-size: 0.1rem;
+}
+
 /* Footer */
 .footer {
   height: 200px;
@@ -514,7 +518,7 @@ h2.grid-head {
   }
 
   .card p {
-    font-size: 0.875rem;
+    font-size: 0.75rem;
     padding: 12px;
   }
 
@@ -522,6 +526,7 @@ h2.grid-head {
     display: block;
     padding: 8px;
     text-align: right;
+    font-size: 0.9rem;
   }
 
   .card {
