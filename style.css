@@ -426,7 +426,6 @@ h2.grid-head {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 3rem 0 2.3rem 0;
   }
 
   .flex-below p.name {
@@ -444,7 +443,6 @@ h2.grid-head {
 
   .main-container p.date {
     font-size: 1rem;
-    margin-bottom: 3rem;
   }
 
   .main-container p.compliment {
