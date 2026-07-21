@@ -21,5 +21,9 @@ A simple JavaScript web app that generates random **Chuck Norris jokes** using *
 3. Click the **Generate Joke** button.
 4. Enjoy a new Chuck Norris joke every time!
 
+## Note
+
+This project is currently designed for desktop browsers. Responsive mobile support will be added in a future update.
+
 ## Live Demo
-https://joke-generator-five-omega.vercel.app/
+joke-generator-hhdca5b3i-priestemmas-projects.vercel.app
