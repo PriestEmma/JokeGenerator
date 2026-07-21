@@ -26,4 +26,4 @@ A simple JavaScript web app that generates random **Chuck Norris jokes** using *
 This project is currently designed for desktop browsers. Responsive mobile support will be added in a future update.
 
 ## Live Demo
-joke-generator-hhdca5b3i-priestemmas-projects.vercel.app
+https://joke-generator-ccimk5fus-priestemmas-projects.vercel.app/
