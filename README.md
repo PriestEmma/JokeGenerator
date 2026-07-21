@@ -1,6 +1,6 @@
 # JokeGenerator
 
-A simple JavaScript web app that generates random **Chuck Norris jokes** using **XMLHttpRequest (XHR)**.
+A simple JavaScript web app that generates random **jokes** using **XMLHttpRequest (XHR)**.
 
 ## Features 
 
